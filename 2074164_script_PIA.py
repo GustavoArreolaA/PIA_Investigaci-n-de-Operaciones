@@ -85,8 +85,8 @@ if np.isclose(maximin, minimax, atol=1e-4):
     print(f"   Punto de silla → {epc[r]}  vs  {emc[c]}")
     print(f"  Valor del juego : {maximin:+.4f} pp")
 
-    p = np.zeros(M); p[r] = 1.0   # MegaMart juega siempre la estrategia r
-    q = np.zeros(N); q[c] = 1.0   # PriceKing juega siempre la estrategia c
+    p = np.zeros(M); p[r] = 1.0   # PriceCorp juega siempre la estrategia r
+    q = np.zeros(N); q[c] = 1.0   # MaxClub juega siempre la estrategia c
     V = maximin                    # El valor del juego es el punto de silla
     
 else:
